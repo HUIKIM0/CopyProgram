@@ -29,24 +29,24 @@ namespace CopyProgram
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lboxTextSave = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lboxTextSave
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(274, 289);
-            this.listBox1.TabIndex = 0;
+            this.lboxTextSave.FormattingEnabled = true;
+            this.lboxTextSave.ItemHeight = 15;
+            this.lboxTextSave.Location = new System.Drawing.Point(12, 12);
+            this.lboxTextSave.Name = "lboxTextSave";
+            this.lboxTextSave.Size = new System.Drawing.Size(274, 289);
+            this.lboxTextSave.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(298, 322);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lboxTextSave);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -56,7 +56,7 @@ namespace CopyProgram
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lboxTextSave;
     }
 }
 
