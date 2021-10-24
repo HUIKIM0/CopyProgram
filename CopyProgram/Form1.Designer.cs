@@ -35,11 +35,13 @@ namespace CopyProgram
             // lboxTextSave
             // 
             this.lboxTextSave.FormattingEnabled = true;
+            this.lboxTextSave.HorizontalScrollbar = true;
             this.lboxTextSave.ItemHeight = 15;
             this.lboxTextSave.Location = new System.Drawing.Point(12, 12);
             this.lboxTextSave.Name = "lboxTextSave";
             this.lboxTextSave.Size = new System.Drawing.Size(274, 289);
             this.lboxTextSave.TabIndex = 0;
+            this.lboxTextSave.SelectedIndexChanged += new System.EventHandler(this.lboxTextSave_SelectedIndexChanged);
             // 
             // Form1
             // 

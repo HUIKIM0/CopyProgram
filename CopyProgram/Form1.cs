@@ -39,14 +39,14 @@ namespace CopyProgram
             }
         }
 
-        private void LboxTextSave_SelectedIndexChanged(object sender, System.EventArgs e)
+        private void lboxTextSave_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (lboxTextSave.SelectedIndex != -1)    
+            if (lboxTextSave.SelectedIndex != -1)
             {
-                Clipboard.SetData(System.Windows.Forms.DataFormats.UnicodeText, lboxTextSave.SelectedItem.ToString()); //Clipboard.SetData
+                Clipboard.SetData(System.Windows.Forms.DataFormats.UnicodeText, lboxTextSave.SelectedItem.ToString());
             }
+
+
         }
-
-
     }
 }
