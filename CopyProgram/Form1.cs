@@ -17,10 +17,6 @@ namespace CopyProgram
 
         KeyboardHook _kbh = new KeyboardHook();
 
-
-
-
-
         public Form1()
         {
             InitializeComponent();
@@ -49,6 +45,7 @@ namespace CopyProgram
             {
                 Clipboard.SetData(System.Windows.Forms.DataFormats.UnicodeText, lboxTextSave.SelectedItem.ToString());
             }
+
         }
 
 

@@ -147,8 +147,10 @@ namespace CopyProgram
             // 
             // Form1
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(448, 321);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
