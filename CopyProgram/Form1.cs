@@ -32,10 +32,11 @@ namespace CopyProgram
         // Ctrl + C + 체크박스 활성화 해야 작업
         private void _kbh_KeyDown(object sender, KeyEventArgs e)
         {
+            string strTextBox = tbox.Text;
             if (e.Control && e.KeyCode == Keys.C && cboxActivation.Checked)
             {
-                    Thread.Sleep(1000);  //잠시 세웠다가 해야 클립보드가 정확하게 저장할 시간을 줌
-                    lboxTextSave.Items.Add(Clipboard.GetData(System.Windows.Forms.DataFormats.UnicodeText).ToString());  //Clipboard.GetData
+                Thread.Sleep(1000);  //잠시 세웠다가 해야 클립보드가 정확하게 저장할 시간을 줌
+                lboxTextSave.Items.Add(Clipboard.GetData(System.Windows.Forms.DataFormats.UnicodeText).ToString());  //Clipboard.GetData
             }
         }
 
@@ -47,7 +48,6 @@ namespace CopyProgram
             }
 
         }
-
 
 
         //체크박스
@@ -98,11 +98,13 @@ namespace CopyProgram
         {
             string strTextBox = tbox.Text;
 
-            if(!string.IsNullOrEmpty(strTextBox) && !lboxTextSave.Items.Contains(strTextBox))
+            if (!string.IsNullOrEmpty(strTextBox) && !lboxTextSave.Items.Contains(strTextBox))
             {
-                lboxTextSave.Items.Add(strTextBox);
-                tbox.Text = "";
+               lboxTextSave.Items.Add(strTextBox);
+               tbox.Text = "";
             }
+          
+            
         }
 
         private void lbox_KeyDown(object sender, KeyEventArgs e)
