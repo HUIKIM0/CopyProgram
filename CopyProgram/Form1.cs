@@ -204,10 +204,10 @@ namespace CopyProgram
         {
             int iCount = lboxTextSave.Items.Count;
 
-            //for (int i = 0; i < iCount; i++)
-            //{
-            //    lboxTextSave.Items[i] = lboxTextSave.Items[i].ToString().Trim();
-            //}
+            for (int i = 0; i < iCount; i++)
+            {
+                lboxTextSave.Items[i] = lboxTextSave.Items[i].ToString().Trim();
+            }
         }
 
         ///<summary>
