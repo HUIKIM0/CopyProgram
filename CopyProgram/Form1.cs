@@ -198,7 +198,7 @@ namespace CopyProgram
         #region Event Function
 
         ///<summary>
-        ///불필요한 공백제거용 함수
+        ///ListBox에 들어있는 요소들의 앞,뒤 불필요한 공백제거용 함수
         ///</summary>
         private void fEmptyDelete()
         {
@@ -215,6 +215,7 @@ namespace CopyProgram
         ///</summary>
         private void fAllDelete()
         {
+            //MessageBoxButtons.YesNo 기능에서 Yes누르면
             if (DialogResult.Yes == MessageBox.Show("등록되어 있는 Data를 초기화 합니다.", "ListBox Item Clear", MessageBoxButtons.YesNo))
             {
                 lboxTextSave.Items.Clear();
@@ -305,10 +306,10 @@ namespace CopyProgram
         /// </summary>
         private void fProgramInfo()
         {
-            string strProgramInfo = "Ctrl + C / Ctrl + V 반복작업을 수월하게!";
+            string strProgramInfo = "Ctrl + C / Ctrl + V 반복작업을 수월하게!\n" +
+                                    "ListBox 안의 내용 클릭 시 자동으로 Ctrl + C 됩니다 ";
             MessageBox.Show(strProgramInfo);
         }
-
 
 
         #endregion
