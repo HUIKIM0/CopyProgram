@@ -110,11 +110,13 @@ namespace CopyProgram
         {
             string strTextBox = tbox.Text;
 
+
                //!String.IsNullOrEmpty(strText)
             if (strTextBox != "" && !lboxTextSave.Items.Contains(strTextBox))
             {
-               lboxTextSave.Items.Add(strTextBox);
-               tbox.Text = "";
+                lboxTextSave.Items.Add(strTextBox);
+                tbox.Text = "";
+              
             }
           
             
@@ -208,6 +210,7 @@ namespace CopyProgram
             {
                 lboxTextSave.Items[i] = lboxTextSave.Items[i].ToString().Trim();
             }
+
         }
 
         ///<summary>
