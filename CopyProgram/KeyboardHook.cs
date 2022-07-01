@@ -21,9 +21,10 @@ namespace CopyProgram
         [DllImport("kernel32.dll")]
         static extern IntPtr LoadLibrary(string IpFileName);   // 라이브러리 등록
 
-        public delegate int keyboardHookProc(int code, int wParam, ref keyboardHookStruct IParam); // keyboardHookProc 대리자
+        // callback delegate
+        public delegate int keyboardHookProc(int code, int wParam, ref keyboardHookStruct IParam); 
 
-        // keyboardHookStruct 구조체
+        // keyboardHookStruct 구조체 정의
         public struct keyboardHookStruct
         {
             public int vkCode;
@@ -33,7 +34,7 @@ namespace CopyProgram
             public int dwExtraInfo;
         }
 
-        // 정의 되어 있는 상수 값. 고대로 복붙
+        // 정의 되어 있는 상수 값. 그대로 사용
         const int VK_SHIFT = 0x10;
         const int VK_CONTROL = 0x11;
         const int VK_MENU = 0x12;
@@ -62,7 +63,7 @@ namespace CopyProgram
         public void hook()
         {
             IntPtr hInstance = LoadLibrary("User32");    //라이브러리 로드
-            hhook = SetWindowsHookEx(WH_KEYBOARD_LL, khp, hInstance, 0);   //후킹
+            hhook = SetWindowsHookEx(WH_KEYBOARD_LL, khp, hInstance, 0);   //후킹하기
         }
 
         public void unhook()
@@ -70,7 +71,7 @@ namespace CopyProgram
             UnhookWindowsHookEx(hhook);
         }
 
-        //delegate keyboradHoockStruct 에 맞는 함수
+        //delegate keyboardHookProc 에 맞는 함수
         public int hookproc(int code, int wParam, ref keyboardHookStruct IParam)
         {
             if (code >= 0)

@@ -104,21 +104,17 @@ namespace CopyProgram
         }
 
 
-
         //엔터,등록버튼 => 중복 아니여야 넣어줌
         private void DataSave()
         {
             string strTextBox = tbox.Text;
 
-
-               //!String.IsNullOrEmpty(strText)
-            if (strTextBox != "" && !lboxTextSave.Items.Contains(strTextBox))
+            //if (strTextBox != ""
+            if (!String.IsNullOrEmpty(strTextBox) && !lboxTextSave.Items.Contains(strTextBox))
             {
                 lboxTextSave.Items.Add(strTextBox);
                 tbox.Text = "";
-              
             }
-          
             
         }
 

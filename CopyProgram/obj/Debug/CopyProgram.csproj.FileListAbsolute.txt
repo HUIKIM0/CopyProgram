@@ -1,10 +1,10 @@
 D:\dev\C#Work\CopyProgram\CopyProgram\bin\Debug\CopyProgram.exe.config
 D:\dev\C#Work\CopyProgram\CopyProgram\bin\Debug\CopyProgram.exe
 D:\dev\C#Work\CopyProgram\CopyProgram\bin\Debug\CopyProgram.pdb
-D:\dev\C#Work\CopyProgram\CopyProgram\obj\Debug\CopyProgram.csprojAssemblyReference.cache
 D:\dev\C#Work\CopyProgram\CopyProgram\obj\Debug\CopyProgram.Form1.resources
 D:\dev\C#Work\CopyProgram\CopyProgram\obj\Debug\CopyProgram.Properties.Resources.resources
 D:\dev\C#Work\CopyProgram\CopyProgram\obj\Debug\CopyProgram.csproj.GenerateResource.cache
 D:\dev\C#Work\CopyProgram\CopyProgram\obj\Debug\CopyProgram.csproj.CoreCompileInputs.cache
 D:\dev\C#Work\CopyProgram\CopyProgram\obj\Debug\CopyProgram.exe
 D:\dev\C#Work\CopyProgram\CopyProgram\obj\Debug\CopyProgram.pdb
+D:\dev\C#Work\CopyProgram\CopyProgram\obj\Debug\CopyProgram.csproj.AssemblyReference.cache
