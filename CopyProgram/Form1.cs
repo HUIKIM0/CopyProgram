@@ -312,10 +312,6 @@ namespace CopyProgram
 
 
         #endregion
-
-
     }
-
-
 }
 
